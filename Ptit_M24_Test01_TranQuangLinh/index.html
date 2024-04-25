@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0"> 
+	<title>Feedback</title> 
+	<link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<link rel="stylesheet" href="index.css"> 
+</head> 
+
+<body> 
+
+	<div class="form-box"> 
+		<h3>Feedback Coach</h3>
+		<div class="textup"> 
+			<i class="fa fa-solid fa-smile"></i> 
+			Thầy dạy anh em có hay không?
+		</div> 
+		<form id="feedback-form">
+			<label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+			<label> 
+				<i class="fa-solid fa-feather-pointed"></i>
+				Chấm điểm đi
+			</label> 
+			<div class="radio-group"> 
+				<input type="radio" id="1"
+					name="satisfy" value="1" checked> 
+				<label for="1">1</label> 
+
+				<input type="radio" id="2"
+					name="satisfy" value="2"> 
+				<label for="2">2</label>
+
+				<input type="radio" id="3"
+				name="satisfy" value="3"> 
+			    <label for="3">3</label> 
+
+			    <input type="radio" id="4"
+			    name="satisfy" value="4"> 
+		        <label for="4">4</label>
+
+				<input type="radio" id="5"
+				name="satisfy" value="5"> 
+			    <label for="5">5</label> 
+
+				<input type="radio" id="6"
+				name="satisfy" value="6"> 
+			    <label for="6">6</label> 
+
+				<input type="radio" id="7"
+				name="satisfy" value="7"> 
+			    <label for="7">7</label>
+				
+				<input type="radio" id="8"
+				name="satisfy" value="8"> 
+			    <label for="8">8</label>
+
+				<input type="radio" id="9"
+				name="satisfy" value="9"> 
+			    <label for="9">9</label>
+
+				<input type="radio" id="10"
+			    name="satisfy" value="10"> 
+			    <label for="10">10</label> 
+			</div> 
+
+			<label for="msg"> 
+				<i class="fa-solid fa-comments"
+				style="margin-right: 3px;"></i> 
+				Write a riview:
+			</label> 
+			<textarea id="msg" name="msg"
+					rows="4" cols="10" required> 
+			</textarea> 
+			<button type="submit"> 
+				Send
+			</button>
+		</form> 
+	</div>
+	<div id="feedback-container"></div>
+<script src="./index.js"></script>
+</body> 
+
+</html>
